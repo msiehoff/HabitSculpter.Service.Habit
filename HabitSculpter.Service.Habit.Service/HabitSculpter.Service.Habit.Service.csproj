@@ -140,6 +140,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\v100\BooleanHabitController.cs" />
+    <Compile Include="Controllers\v100\QuantityHabitController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -152,11 +153,17 @@
     <Compile Include="Migrations\201411022030093_boolean-habit.Designer.cs">
       <DependentUpon>201411022030093_boolean-habit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411022055160_quantity-habit.cs" />
+    <Compile Include="Migrations\201411022055160_quantity-habit.Designer.cs">
+      <DependentUpon>201411022055160_quantity-habit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ActivityLog.cs" />
     <Compile Include="Models\BooleanHabit.cs" />
+    <Compile Include="Models\GoalComparison.cs" />
     <Compile Include="Models\Habit.cs" />
     <Compile Include="Models\HabitContext.cs" />
+    <Compile Include="Models\QuantityHabit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201411022030093_boolean-habit.resx">
       <DependentUpon>201411022030093_boolean-habit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411022055160_quantity-habit.resx">
+      <DependentUpon>201411022055160_quantity-habit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

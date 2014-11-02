@@ -21,6 +21,8 @@ namespace HabitSculpter.Service.Habit.Service.Models
 
         public System.Data.Entity.DbSet<HabitSculpter.Service.Habit.Service.Models.BooleanHabit> BooleanHabits { get; set; }
 
+        public System.Data.Entity.DbSet<HabitSculpter.Service.Habit.Service.Models.QuantityHabit> QuantityHabits { get; set; }
+
         
     
     }
