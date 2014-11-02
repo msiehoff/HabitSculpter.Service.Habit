@@ -10,7 +10,7 @@ using ServiceModels = HabitSculpter.Service.Habit.Service.Models;
 
 namespace HabitSculpter.Service.Habit.Service.Controllers.v100
 {
-    public class HabitController : ApiController
+    public class HabitControllerOld : ApiController
     {
         private HabitContext db = new HabitContext();
 

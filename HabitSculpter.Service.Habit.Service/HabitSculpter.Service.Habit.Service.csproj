@@ -139,7 +139,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\v100\HabitController.cs" />
+    <Compile Include="Controllers\v100\BooleanHabitController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,6 +147,10 @@
     <Compile Include="Migrations\201410300218200_initial.cs" />
     <Compile Include="Migrations\201410300218200_initial.Designer.cs">
       <DependentUpon>201410300218200_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411022030093_boolean-habit.cs" />
+    <Compile Include="Migrations\201411022030093_boolean-habit.Designer.cs">
+      <DependentUpon>201411022030093_boolean-habit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Habit.cs" />
@@ -206,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201410300218200_initial.resx">
       <DependentUpon>201410300218200_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411022030093_boolean-habit.resx">
+      <DependentUpon>201411022030093_boolean-habit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
