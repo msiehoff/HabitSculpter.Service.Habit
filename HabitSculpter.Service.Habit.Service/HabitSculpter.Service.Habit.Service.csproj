@@ -153,6 +153,8 @@
       <DependentUpon>201411022030093_boolean-habit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ActivityLog.cs" />
+    <Compile Include="Models\BooleanHabit.cs" />
     <Compile Include="Models\Habit.cs" />
     <Compile Include="Models\HabitContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
