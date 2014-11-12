@@ -10,5 +10,14 @@ namespace HabitSculpter.Service.Habit.Service.Models
         {
             return activityLog.ActivityValue == GoalValue;
         }
+
+        public override void LogActivity(IHabitContext context, ActivityLog<bool> activityLog)
+        {
+            this.ActivityLogs.Add(activityLog);
+
+            context.SaveChanges();
+        }
+
+         
     }
 }

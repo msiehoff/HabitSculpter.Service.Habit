@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\BooleanActivityLog\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\v100\BooleanActivityLogController.cs" />
     <Compile Include="Controllers\v100\BooleanHabitController.cs" />
     <Compile Include="Controllers\v100\QuantityHabitController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

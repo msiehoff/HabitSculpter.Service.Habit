@@ -25,5 +25,10 @@ namespace HabitSculpter.Service.Habit.Service.Models
 
             return comparisonFunction.Invoke(activityLog, GoalValue);
         }
+
+        public override void LogActivity(IHabitContext context, ActivityLog<int> activityLog)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

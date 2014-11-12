@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
 namespace HabitSculpter.Service.Habit.Service.Models
 {
-    public class HabitContext : DbContext
+    public interface IHabitContext
+    {
+        DbSet<BooleanHabit> BooleanHabits { get; set; }
+        DbSet<QuantityHabit> QuantityHabits { get; set; }
+
+        int SaveChanges();
+    }
+
+    public class HabitContext : DbContext, IHabitContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -19,9 +23,9 @@ namespace HabitSculpter.Service.Habit.Service.Models
         {
         }
 
-        public System.Data.Entity.DbSet<HabitSculpter.Service.Habit.Service.Models.BooleanHabit> BooleanHabits { get; set; }
+        public DbSet<BooleanHabit> BooleanHabits { get; set; }
 
-        public System.Data.Entity.DbSet<HabitSculpter.Service.Habit.Service.Models.QuantityHabit> QuantityHabits { get; set; }
+        public DbSet<QuantityHabit> QuantityHabits { get; set; }
 
         
     

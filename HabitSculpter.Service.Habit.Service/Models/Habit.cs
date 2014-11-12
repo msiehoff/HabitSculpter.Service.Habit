@@ -17,5 +17,6 @@ namespace HabitSculpter.Service.Habit.Service.Models
         public abstract List<ActivityLog<TValueType>> ActivityLogs { get; set; }
 
         public abstract bool WasGoalAccomplished(ActivityLog<TValueType> activityLog);
+        public abstract void LogActivity(IHabitContext context, ActivityLog<TValueType> activityLog);
     }
 }
